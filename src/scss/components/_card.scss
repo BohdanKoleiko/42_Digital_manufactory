@@ -1,0 +1,31 @@
+.card {
+   border: 0px solid #5a58cf;
+   border-radius: 10px;
+   padding: 48px;
+   width: 452px;
+   height: 480px;
+   box-shadow: 0 20px 40px 0 rgba(47, 47, 47, 0.2);
+   background: #fff;
+
+   &__title,
+   &__btn {
+      margin-bottom: px_to_rem(24);
+   }
+
+   &__list {
+      margin-bottom: px_to_rem(40);
+   }
+   &__list-item {
+      &:not(:last-child) {
+         margin-bottom: 1rem;
+      }
+   }
+
+   &__btn {
+      background-color: $bg-color_7;
+      border-radius: 5px;
+      padding: 13px 22px;
+      color: $text-color_2;
+      width: 100%;
+   }
+}

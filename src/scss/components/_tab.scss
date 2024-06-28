@@ -1,0 +1,116 @@
+.tab {
+   display: flex;
+   align-items: center;
+   padding: px_to_rem(12) px_to_rem(24) px_to_rem(12) px_to_rem(12);
+   border-radius: 100px;
+   background-color: $bg-color_6;
+   transition: background-color 0.2s ease-in-out;
+
+   &__logo-wrapper {
+      width: 32px;
+      height: 32px;
+      border-radius: 100%;
+      margin-right: px_to_rem(10);
+      padding: 7px;
+      opacity: 0.5;
+      transition: opacity 0.2s ease-in-out;
+   }
+
+   &__logo {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+   }
+
+   &__text {
+      font-weight: 500;
+      font-size: px_to_rem(18);
+      color: $text-color_1_opacity;
+      text-transform: capitalize;
+      transition: color 0.2s ease-in-out;
+   }
+
+   &_dark-blue {
+      .tab__logo-wrapper {
+         background-color: $bg-color_1;
+      }
+
+      &:hover {
+         background-color: $bg-color_1_opacity;
+      }
+   }
+
+   &_blue {
+      .tab__logo-wrapper {
+         background-color: $bg-color_2;
+      }
+
+      &:hover {
+         background-color: $bg-color_2_opacity;
+      }
+   }
+
+   &_dark-green {
+      .tab__logo-wrapper {
+         background-color: $bg-color_3;
+      }
+
+      &:hover {
+         background-color: $bg-color_3_opacity;
+      }
+   }
+
+   &_yellow {
+      .tab__logo-wrapper {
+         background-color: $bg-color_4;
+      }
+
+      &:hover {
+         background-color: $bg-color_4_opacity;
+      }
+   }
+
+   &_red {
+      .tab__logo-wrapper {
+         background-color: $bg-color_5;
+      }
+
+      &:hover {
+         background-color: $bg-color_5_opacity;
+      }
+   }
+
+   &__active,
+   &:hover {
+      .tab__logo-wrapper {
+         opacity: 1;
+      }
+
+      .tab__text {
+         font-weight: 700;
+         letter-spacing: -0.017em;
+         color: $text-color_1;
+      }
+   }
+
+   &__active {
+      opacity: 1;
+
+      .tab_dark-blue {
+         background-color: $bg-color_1_opacity;
+      }
+   }
+
+   &:hover {
+      opacity: 1;
+   }
+}
+
+//.tab.tab__active {
+//   .tab_dark-blue {
+//      background-color: $bg-color_1_opacity;
+//      .tab__logo-wrapper {
+//         background-color: $bg-color_1;
+//      }
+//   }
+//}

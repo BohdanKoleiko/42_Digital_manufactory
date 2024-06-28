@@ -1,0 +1,14 @@
+.title {
+   color: $title-color;
+   font-weight: 700;
+
+   &_h1 {
+      font-size: px_to_rem(62);
+      line-height: 100%;
+      letter-spacing: -0.02em;
+   }
+
+   &_h3 {
+      font-size: px_to_rem(28);
+   }
+}

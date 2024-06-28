@@ -7,8 +7,181 @@
       <link rel="stylesheet" href="./css/style.min.css" />
 
       <title>Health care</title>
+
+      <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
    </head>
    <body>
-      <h1>The Found Programa</h1>
+      <main>
+         <section class="hero">
+            <div class="container">
+               <div class="hero__wrapper">
+                  <div class="hero__heading">
+                     <h1 class="hero__title title title_h1">The Found Program</h1>
+                     <p class="hero__description description">
+                        There’s no one-and-done solution when it comes to sustainable weight care.
+                        With Found, five key factors come together on your journey to reach your
+                        goals
+                     </p>
+                     <div class="tabs">
+                        <a href="#doctor" class="tab tab_dark-blue">
+                           <figure class="tab__logo-wrapper">
+                              <img src="./images/icons/doctor.png" alt="doctor" class="tab__logo" />
+                           </figure>
+                           <span class="tab__text">doctor</span>
+                        </a>
+                        <a href="#coach" class="tab tab_blue">
+                           <figure class="tab__logo-wrapper">
+                              <img
+                                 src="./images/icons/sneaker.png"
+                                 alt="sneaker"
+                                 class="tab__logo"
+                              />
+                           </figure>
+                           <span class="tab__text">coach</span>
+                        </a>
+                        <a href="#app" class="tab tab_dark-green">
+                           <figure class="tab__logo-wrapper">
+                              <img src="./images/icons/phone.png" alt="phone" class="tab__logo" />
+                           </figure>
+                           <span class="tab__text">app</span>
+                        </a>
+                        <a href="#medication" class="tab tab_yellow">
+                           <figure class="tab__logo-wrapper">
+                              <img src="./images/icons/pill.png" alt="pill" class="tab__logo" />
+                           </figure>
+                           <span class="tab__text">medication</span>
+                        </a>
+                        <a href="#community" class="tab tab_red">
+                           <figure class="tab__logo-wrapper">
+                              <img src="./images/icons/hearts.png" alt="hearts" class="tab__logo" />
+                           </figure>
+                           <span class="tab__text">community</span>
+                        </a>
+                     </div>
+                  </div>
+
+                  <div class="hero__decoration-img">
+                     <svg
+                        width="720"
+                        height="834"
+                        viewBox="0 0 720 834"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="hero__image"
+                     >
+                        <path
+                           d="M0.000486289 76.059L0.000976562 0H720L720 373.891C720 424.305 690.853 470.173 645.212 491.584L508.435 555.749C475.386 571.252 472.055 616.956 502.507 637.087L675.682 751.574C703.354 769.868 720 800.827 720 834H0.000976562L0.00123247 537.003C0.00127685 485.489 21.4747 436.306 59.2556 401.286L229.289 243.681C244.969 229.147 237.807 202.978 216.911 198.455L73.7332 167.461C30.7053 158.147 0.000202509 120.084 0.000486289 76.059Z"
+                           fill="#5A58CF"
+                        />
+                     </svg>
+                  </div>
+               </div>
+
+               <div class="hero__cards">
+                  <div class="hero__card card" id="doctor">
+                     <h3 class="card__title title title_h3">Board-certified doctors</h3>
+
+                     <ul class="card__list">
+                        <li class="card__list-item">
+                           Board-certified and specifically trained on weight loss medication
+                        </li>
+                        <li class="card__list-item">
+                           Virtual appointments, no in-person office visits required
+                        </li>
+                        <li class="card__list-item">
+                           Found doctors customize the program to your specific needs
+                        </li>
+                     </ul>
+
+                     <button type="button" class="card__btn">Continue</button>
+
+                     <div class="card__price">Starting at $99/month</div>
+                  </div>
+
+                  <div class="hero__card card" id="coach">
+                     <h3 class="card__title title title_h3">Personal health coach</h3>
+
+                     <ul class="card__list">
+                        <li class="card__list-item">
+                           Coaches tailor your movement and nutrition plan to fit your needs
+                        </li>
+                        <li class="card__list-item">
+                           On-demand availability to answer all of your questions
+                        </li>
+                        <li class="card__list-item">
+                           Build sustainable habits with the help of your coach
+                        </li>
+                     </ul>
+
+                     <button type="button" class="card__btn">Continue</button>
+
+                     <div class="card__price">Starting at $99/month</div>
+                  </div>
+
+                  <div class="hero__card card" id="app">
+                     <h3 class="card__title title title_h3">Found mobile app</h3>
+
+                     <ul class="card__list">
+                        <li class="card__list-item">
+                           Keep track of your progress by logging your routines
+                        </li>
+                        <li class="card__list-item">
+                           Coaches use logged routines to personalize your weight loss program
+                        </li>
+                        <li class="card__list-item">Integrates with Apple Health and Google Fit</li>
+                     </ul>
+
+                     <button type="button" class="card__btn">Continue</button>
+
+                     <div class="card__price">Starting at $99/month</div>
+                  </div>
+
+                  <div class="hero__card card" id="medication">
+                     <h3 class="card__title title title_h3">Prescription medication</h3>
+
+                     <p>
+                        Our medical team provides access to the widest set of prescriptions on the
+                        market, including (but not limited to):
+                     </p>
+
+                     <ul class="card__list">
+                        <li class="card__list-item">
+                           Work directly with our doctors to find the medication right for you
+                        </li>
+                        <li class="card__list-item">Medication delivered to your door</li>
+                        <li class="card__list-item">No insurance requirements</li>
+                     </ul>
+
+                     <button type="button" class="card__btn">Continue</button>
+
+                     <div class="card__price">Starting at $99/month</div>
+                  </div>
+
+                  <div class="hero__card card" id="community">
+                     <h3 class="card__title title title_h3">Supportive community</h3>
+
+                     <ul class="card__list">
+                        <li class="card__list-item">
+                           Celebrate your journey with thousands of other members
+                        </li>
+                        <li class="card__list-item">
+                           Share recipes, weight loss milestones, and roadblocks
+                        </li>
+                        <li class="card__list-item">
+                           The Found team is actively involved to make sure you have the best
+                           experience
+                        </li>
+                     </ul>
+
+                     <button type="button" class="card__btn">Continue</button>
+
+                     <div class="card__price">Starting at $99/month</div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <script src="./js/main.js"></script>
    </body>
 </html>
