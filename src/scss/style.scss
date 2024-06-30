@@ -1,19 +1,39 @@
 @import "./base/normalize";
 @import "./base/reset.local";
 @import "./base/fonts";
+@import "./base/variables";
+@import "./base/mixins";
 
 body {
-   font-family: ;
+   font-family: "Open Sans";
    font-size: 16px;
 }
 
 html,
 body {
    height: 100%;
+   overflow-x: hidden;
 }
 
 .container {
    max-width: 1348px;
    margin: 0 auto;
-   padding: 40px;
+
+   @media screen and (min-width: 375px) {
+      padding: 0 24px;
+   }
+
+   @media screen and (min-width: 992px) {
+      padding: 0 40px;
+   }
 }
+
+/* COMPONENTS */
+@import "./components/title";
+@import "./components/description";
+@import "./components/tab";
+@import "./components/tabs";
+@import "./components/card";
+
+/* BLOCKS */
+@import "./blocks/hero";
