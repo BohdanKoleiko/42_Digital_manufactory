@@ -1,7 +1,6 @@
 .tab {
    display: flex;
    align-items: center;
-   padding: px_to_rem(12) px_to_rem(24) px_to_rem(12) px_to_rem(12);
    border-radius: 100px;
    background-color: $bg-color_6;
    transition: background-color $transition-200-linear;
@@ -24,7 +23,6 @@
 
    &__text {
       font-weight: 500;
-      font-size: px_to_rem(18);
       color: $text-color_1_opacity;
       text-transform: capitalize;
       transition: opacity $transition-200-linear;
@@ -103,5 +101,31 @@
 
    &:hover {
       opacity: 1;
+   }
+
+   @media screen and (min-width: 375px) {
+      padding: px_to_rem(8) px_to_rem(15) px_to_rem(8) px_to_rem(8);
+
+      &__logo-wrapper {
+         width: 28px;
+         height: 28px;
+      }
+
+      &__text {
+         font-size: px_to_rem(16);
+      }
+   }
+
+   @media screen and (min-width: 992px) {
+      padding: px_to_rem(12) px_to_rem(24) px_to_rem(12) px_to_rem(12);
+
+      &__logo-wrapper {
+         width: 32px;
+         height: 32px;
+      }
+
+      &__text {
+         font-size: px_to_rem(18);
+      }
    }
 }

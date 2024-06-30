@@ -5,7 +5,7 @@
 @import "./base/mixins";
 
 body {
-   font-family: "Montserrat";
+   font-family: "Open Sans";
    font-size: 16px;
 }
 
@@ -18,7 +18,14 @@ body {
 .container {
    max-width: 1348px;
    margin: 0 auto;
-   padding: 0 40px;
+
+   @media screen and (min-width: 375px) {
+      padding: 0 24px;
+   }
+
+   @media screen and (min-width: 992px) {
+      padding: 0 40px;
+   }
 }
 
 /* COMPONENTS */
