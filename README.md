@@ -1,4 +1,4 @@
-Installation
+Installation </br>
 To install and run the project locally, follow these steps:
 
 1. Clone the repository:
