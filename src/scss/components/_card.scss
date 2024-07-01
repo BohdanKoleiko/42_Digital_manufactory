@@ -83,8 +83,9 @@
 
    &__price {
       text-align: center;
-      font-weight: 500;
-      font-size: px_to_rem(14);
+      font-weight: 400;
+      font-size: px_to_rem(16);
+      line-height: 23px;
       color: $text-color_1;
    }
 
