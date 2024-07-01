@@ -16,20 +16,41 @@
    }
 
    &__description {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 170%;
+      color: $text-color_1;
+      opacity: 0.9;
       margin-bottom: px_to_rem(24);
    }
 
    &__advantages {
       display: flex;
       flex-wrap: wrap;
-      column-gap: px_to_rem(8);
+      gap: px_to_rem(8);
       margin-bottom: px_to_rem(24);
    }
-
-   &__advantage-item {
+   &__advantage {
+      display: flex;
+      align-items: center;
       border-radius: 8px;
       padding: px_to_rem(12);
       background: #fdf4db;
+      font-weight: 600;
+      font-size: px_to_rem(14);
+   }
+   &__advantage-text:not(:last-child) {
+      margin-right: px_to_rem(8);
+   }
+   &__advantage-info {
+      width: 11px;
+      height: 11px;
+   }
+   &__advantage-img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
    }
 
    &__list {
@@ -43,6 +64,14 @@
          margin-bottom: 1rem;
       }
    }
+   &__list-item-image > img {
+      padding: 5px;
+   }
+   &__list-item-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+   }
 
    &__btn {
       background-color: $bg-color_7;
@@ -54,8 +83,9 @@
 
    &__price {
       text-align: center;
-      font-weight: 500;
-      font-size: px_to_rem(14);
+      font-weight: 400;
+      font-size: px_to_rem(16);
+      line-height: 23px;
       color: $text-color_1;
    }
 
