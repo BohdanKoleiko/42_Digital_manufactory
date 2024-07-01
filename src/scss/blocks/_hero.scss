@@ -60,7 +60,7 @@
       }
 
       &__cards {
-         width: auto;
+         max-width: 327px;
       }
 
       &__card {
@@ -126,6 +126,7 @@
          padding-left: px_to_rem(20);
          margin-top: 21vh;
          margin-bottom: 19vh;
+         max-width: none;
       }
 
       &__card {
